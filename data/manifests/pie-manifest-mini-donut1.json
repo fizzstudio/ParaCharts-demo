@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    {
+      "type": "pie",
+      "title": "% of chief executives say racial diversity is important to external leadership",
+      "facets": {
+        "x": {
+          "label": "Response type",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string"
+        },
+        "y": {
+          "label": "Proportion of respondents",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 0.01
+        }
+      },
+      "series": [
+        {
+          "key": "Proportion of respondents",
+          "theme": {
+            "baseQuantity": "response",
+            "baseKind": "proportion",
+            "aggregate": "total"
+          },
+          "records": [
+            {
+              "x": "Yes",
+              "y": "82"
+            },
+            {
+              "x": "No",
+              "y": "18"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "sonification.isEnabled": true
+      }
+    }
+  ]
+}

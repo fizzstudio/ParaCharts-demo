@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    {
+      "type": "pie",
+      "title": "% of that ground is dissatisfied with Organization's racial composition",
+      "facets": {
+        "x": {
+          "label": "Response type",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string"
+        },
+        "y": {
+          "label": "Proportion of respondents",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 0.01
+        }
+      },
+      "series": [
+        {
+          "key": "Proportion of respondents",
+          "theme": {
+            "baseQuantity": "response",
+            "baseKind": "proportion",
+            "aggregate": "total"
+          },
+          "records": [
+            {
+              "x": "Yes",
+              "y": "70"
+            },
+            {
+              "x": "No",
+              "y": "30"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "sonification.isEnabled": true
+      }
+    }
+  ]
+}

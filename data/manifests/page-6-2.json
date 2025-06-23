@@ -1,0 +1,109 @@
+{
+  "datasets": [
+    {
+      "type": "column",
+      "title": "All Organizations",
+      "facets": {
+        "x": {
+          "label": "Category",
+          "description": "categories of governance responsibility from highest to lowest",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string",
+          "displayType": {
+            "type": "axis",
+            "orientation": "vertical"
+          }
+        },
+        "y": {
+          "label": "Performance",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "displayType": {
+            "type": "axis",
+            "orientation": "horizontal"
+          }
+        }
+      },
+      "series": [
+        {
+          "key": "Responsibility performance",
+          "theme": {
+            "baseQuantity": "performance",
+            "baseKind": "dimensioned",
+            "entity": "all assessed Organizations",
+            "aggregate": "average self-reported"
+          },
+          "records": [
+            {
+              "x": "Financial Oversight",
+              "y": "3.40"
+            },
+            {
+              "x": "IMPACT",
+              "y": "3.35"
+            },
+            {
+              "x": "Organization Structure",
+              "y": "3.20"
+            },
+            {
+              "x": "Organization Meetings",
+              "y": "3.18"
+            },
+            {
+              "x": "Chief Executive Oversight",
+              "y": "3.17"
+            },
+            {
+              "x": "Mission, Vision, & Strategic Direction",
+              "y": "3.08"
+            },
+            {
+              "x": "Program Oversight",
+              "y": "2.98"
+            },
+            {
+              "x": "Funding & Public Image",
+              "y": "2.97"
+            },
+            {
+              "x": "CULTURE",
+              "y": "2.86"
+            },
+            {
+              "x": "Organization Composition",
+              "y": "2.69"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "controlPanel.isControlPanelDefaultOpen": false,
+        "color.colorPalette": "foundation",
+        "color.colorMap": "slate",
+        "chart.orientation": "east",
+        "chart.size.width": 360,
+        "chart.title.margin": 10,
+        "axis.vert.labelOrder": "northToSouth",
+        "axis.x.title.isDrawTitle": false,
+        "axis.y.title.isDrawTitle": false,
+        "axis.y.tick.step": 1,
+        "axis.x.tick.tickLabel.isDrawEnabled": false,
+        "axis.y.line.isDrawEnabled": false,
+        "axis.x.tick.isDrawEnabled": false,
+        "axis.y.tick.isDrawEnabled": false,
+        "grid.isDrawHorizLines": false,
+        "type.bar.colorByDatapoint": true,
+        "type.bar.barWidth": 20,
+        "type.bar.isDrawRecordLabels": true,
+        "legend.isDrawLegend": false,
+        "sonification.isSoniEnabled": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "datasets": [
+    {
+      "type": "pie",
+      "title": "Do you find serving on this Organization to be a rewarding and satisfying experience?",
+      "facets": {
+        "x": {
+          "label": "Response type",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string"
+        },
+        "y": {
+          "label": "Proportion of respondents",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 0.01
+        }
+      },
+      "series": [
+        {
+          "key": "Proportion of respondents",
+          "theme": {
+            "baseQuantity": "response",
+            "baseKind": "proportion",
+            "entity": "Your Organization",
+            "aggregate": "total"
+          },
+          "records": [
+            {
+              "x": "Very Unrewarding",
+              "y": "3"
+            },
+            {
+              "x": "Neutral",
+              "y": "3"
+            },
+            {
+              "x": "Somewhat Rewarding",
+              "y": "10"
+            },
+            {
+              "x": "Very Rewarding",
+              "y": "80"
+            },
+            {
+              "x": "No Opinion",
+              "y": "3"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "sonification.isEnabled": true
+      }
+    }
+  ]
+}

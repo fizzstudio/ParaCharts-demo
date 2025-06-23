@@ -1,0 +1,316 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --theme_prime: hsl(1, 54%, 48%);
+  --theme_accent: hsl(39, 78%, 57%);
+  --people: hsl(210, 25%, 25%);
+  --culture: hsl(275, 41%, 51%);
+  --work: hsl(4, 50%, 52%);
+  --impact: hsl(131, 100%, 18%);
+  --people_light: hsl(210, 25%, 25%, 0.15);
+  --culture_light: hsl(39, 70%, 44%, 0.15);
+  --work_light: hsl(4, 50%, 52%, 0.15);
+  --impact_light: hsl(131, 100%, 18%, 0.15);
+
+  --no_opinion: hsl(0, 0%, 80%);
+  --very_unrewarding: hsl(4, 50%, 52%);
+  --neutral: hsl(39, 70%, 44%);
+  --somewhat_rewarding: hsl(131, 100%, 18%);
+  --very_rewarding: hsl(210, 25%, 25%);
+}
+
+body {
+  font-family: Arial, "Arial Narrow", "Franklin Gothic Medium", Arial,
+    sans-serif;
+  font-size: 1.6em;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+article#container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
+
+main {
+  grid-row: 1;
+  overflow-y: auto;
+}
+
+footer {
+  grid-row: 2;
+}
+
+article#dashOrganization {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  justify-items: center;
+}
+
+section.chart_area p {
+  max-width: 83%;
+  padding-left: 3em;
+  min-height: 3em;
+}
+
+
+body {
+  background-color: white;
+}
+
+main {
+  background-color: white;
+  /* max-height: 1; */
+  padding: 1.5em 1.5em 0 1.5em;
+}
+
+main p {
+  padding-bottom: 0.5em;
+}
+
+footer {
+  min-height: 3.2em;
+  max-height: 3.2em;
+  background-color: var(--culture);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.2em 0.5em 0.5em 0.5em;
+}
+
+footer img#fizz_studio_logo {
+  width: 60px;
+  height: 60px;
+  align-self: flex-end;
+}
+
+section#dashOrganization {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.centered {
+  text-align: center;
+}
+
+h1 {
+  color: var(--theme_prime);
+  padding-bottom: 0.25em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--people);
+  padding-bottom: 0.25em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+li {
+  padding-left: 1.3em;
+  padding-bottom: 0.5em;
+}
+
+.caveat,
+.footnote {
+  font-size: 0.6em;
+  font-style: italic;
+  color: white;
+}
+
+#footer_content {
+  color: white;
+}
+
+
+
+section#links a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  text-align: center;
+  background-image: url(./assets/next-button.svg);
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  opacity: 0.5;
+}
+
+section#links #next {
+  right: 2px;
+  background-image: url(./assets/next-button.svg);
+
+}
+
+section#links #previous {
+  left: 2px;
+  background-image: url(./assets/previous-button.svg);
+}
+
+section#links a:hover,
+section#links a:focus {
+  box-shadow: 0px 0px 20px 0px rgba(74,74,74,0.75);
+  opacity: 1;
+}
+
+
+
+table.composition,
+table.composition th,
+table.composition td {
+  border-bottom: 2px solid hsl(204, 10%, 71%);
+  border-collapse: collapse;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+table.composition thead {
+  border-bottom: 3px solid hsl(198, 30%, 34%);
+}
+
+table.composition thead th {
+  background-color: hsl(198, 37%, 52%);
+  color: white;
+}
+
+table.composition thead th:first-of-type {
+  background-color: white;
+  color: black;
+}
+
+table.composition th,
+td {
+  text-align: center;
+}
+
+table.composition {
+  width: 26em;
+}
+
+table.composition th:first-of-type {
+  text-align: start;
+}
+
+table.composition tbody th {
+  font-weight: normal;
+}
+
+table.composition tbody tr:nth-child(even) {
+  background-color: hsl(204, 36%, 89%);
+}
+
+table.results {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8em;
+}
+
+table.results thead th {
+  background-color: var(--people);
+  color: white;
+  text-align: center;
+}
+
+table.results tbody th,
+table.results tbody td {
+  padding: 0.3em 0.5em;
+  text-align: start;
+  border: none;
+  border-bottom: 1px solid var(--culture);
+}
+
+table.results tbody th.numeric,
+table.results tbody th.average,
+table.results tbody td.numeric,
+table.results tbody td.average {
+  text-align: center;
+}
+
+table.results td {
+  max-width: 60em;
+}
+
+
+
+table.demographics {
+  font-size: 0.8em;
+}
+
+table.demographics,
+table.demographics th,
+table.demographics td {
+  border-bottom: 2px solid hsl(204, 10%, 71%);
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table.demographics thead {
+  border-bottom: 3px solid hsl(198, 30%, 34%);
+}
+
+table.demographics thead th {
+  background-color: hsl(198, 37%, 52%);
+  color: white;
+}
+
+table.demographics thead th:first-of-type {
+  background-color: white;
+  color: black;
+}
+
+table.demographics th, td {
+  text-align: center;
+}
+
+table.demographics th:first-of-type {
+  text-align: start;
+}
+
+table.demographics tbody th {
+  font-weight: normal;
+}
+
+table.demographics tbody tr:nth-child(even) {
+  background-color: hsl(204, 36%, 89%);
+}
+
+/* 
+table.results tr.people {
+  background-color: var(--people_light);
+}
+
+table.results tr.work {
+  background-color: var(--work_light);
+}
+
+table.results tr.culture {
+  background-color: var(--culture_light);
+}
+
+table.results tr.impact {
+  background-color: var(--impact_light);
+} */

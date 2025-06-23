@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satisfaction with Commitment and Overall Experience</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <script src="./_silverbullet.js">  </script>
+  <link rel="stylesheet" href="./_silverbullet.css" type="text/css" media="screen, projection, print">
+  <link rel="stylesheet" href="./_slide_template.css" type="text/css" media="screen, projection, print">
+  <script>
+    let process = {
+      env: {
+        NODE_ENV: "production"
+      }
+    };
+  </script>
+  <script src="../script/paracharts.js" type="module"></script>
+
+  <style>
+    #rewarding,
+    #commitment {
+      /* margin-left: -5em; */
+      font-size: 1rem;
+    } 
+  </style>
+</head>
+
+<body>
+  <article id="container">
+    <main>
+      <h1 class="centered">Satisfaction with Commitment and <br> Overall Experience</h1>
+
+      <article id="dashOrganization">
+        <section class="chart_area">
+          <p>Are you satisfied with the level of commitment and involvement demonstrated by most organization members?</p>
+          <div id="commitment">
+            <para-chart filename="/data/manifests/page-15-1.json"></para-chart>
+          </div>
+        </section>
+
+        <section class="chart_area">
+          <p>Do you find working in this organization to be a rewarding and satisfying experience?</p>
+          <div id="rewarding">
+            <para-chart filename="/data/manifests/page-15-2.json"></para-chart>
+          </div>
+        </section>
+      </article>
+
+      <section id="links">
+        <a id="next" href="intro6.html" aria-label="next slide"> </a>
+        <a id="previous" href="org-effectiveness.html" aria-label="previous slide"> </a>
+      </section>
+    </main>
+    <footer>
+      <div id="footer_content">
+        <p class="footnote">Simulated data</p>
+      </div>
+      <img id="fizz_studio_logo" src="./assets/fizz-logo-white.svg" alt="">
+    </footer>
+  </article>
+</body>
+
+</html>

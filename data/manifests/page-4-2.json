@@ -1,0 +1,109 @@
+{
+  "datasets": [
+    {
+      "type": "column",
+      "title": "Organization areas of responsibility",
+      "facets": {
+        "x": {
+          "label": "Category",
+          "description": "categories of governance responsibility",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string",
+          "displayType": {
+            "type": "axis",
+            "orientation": "vertical"
+          }
+        },
+        "y": {
+          "label": "Performance",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "displayType": {
+            "type": "axis",
+            "orientation": "horizontal"
+          }
+        }
+      },
+      "series": [
+        {
+          "key": "Responsibility averages",
+          "theme": {
+            "baseQuantity": "performance",
+            "baseKind": "dimensioned",
+            "entity": "the Sample Organization",
+            "aggregate": "average self-reported"
+          },
+          "records": [
+            {
+              "x": "Organization Composition",
+              "y": "2.73"
+            },
+            {
+              "x": "Organization Structure",
+              "y": "3.57"
+            },
+            {
+              "x": "Organization Meetings",
+              "y": "3.14"
+            },
+            {
+              "x": "CULTURE",
+              "y": "3.09"
+            },
+            {
+              "x": "Mission, Vision, & Strategic Direction",
+              "y": "3.46"
+            },
+            {
+              "x": "Program Oversight",
+              "y": "3.08"
+            },
+            {
+              "x": "Financial Oversight",
+              "y": "3.81"
+            },
+            {
+              "x": "Chief Executive Oversight",
+              "y": "3.57"
+            },
+            {
+              "x": "Funding & Public Image",
+              "y": "3.02"
+            },
+            {
+              "x": "IMPACT",
+              "y": "3.55"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "chart.title.isDrawTitle": false,
+        "controlPanel.isControlPanelDefaultOpen": false,
+        "color.colorPalette": "foundation",
+        "color.colorMap": "blue,blue,blue,yellow,red,red,red,red,red,green",
+        "chart.orientation": "east",
+        "chart.size.width": 360,
+        "axis.vert.labelOrder": "northToSouth",
+        "axis.x.title.isDrawTitle": false,
+        "axis.y.title.isDrawTitle": false,
+        "axis.y.tick.step": 1,
+        "axis.x.tick.tickLabel.isDrawEnabled": false,
+        "axis.y.line.isDrawEnabled": false,
+        "axis.x.tick.isDrawEnabled": false,
+        "axis.y.tick.isDrawEnabled": false,
+        "grid.isDrawHorizLines": false,
+        "type.bar.colorByDatapoint": true,
+        "type.bar.barWidth": 20,
+        "type.bar.isDrawRecordLabels": true,
+        "legend.isDrawLegend": false,
+        "sonification.isSoniEnabled": true
+      }
+    }
+  ]
+}

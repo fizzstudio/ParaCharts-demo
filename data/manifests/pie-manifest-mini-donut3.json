@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    {
+      "type": "pie",
+      "title": "% have aligned Organization recruitment practices with diversity goals",
+      "facets": {
+        "x": {
+          "label": "Response type",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string"
+        },
+        "y": {
+          "label": "Proportion of respondents",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 0.01
+        }
+      },
+      "series": [
+        {
+          "key": "Proportion of respondents",
+          "theme": {
+            "baseQuantity": "response",
+            "baseKind": "proportion",
+            "aggregate": "total"
+          },
+          "records": [
+            {
+              "x": "Yes",
+              "y": "50"
+            },
+            {
+              "x": "No",
+              "y": "50"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "sonification.isEnabled": true
+      }
+    }
+  ]
+}

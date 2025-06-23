@@ -1,0 +1,86 @@
+{
+  "datasets": [
+    {
+      "type": "column",
+      "title": "Sample Organization Metrics",
+      "chartTheme": {
+        "baseQuantity": "Score",
+        "baseKind": "dimensioned"
+      },
+      "facets": {
+        "x": {
+          "label": "Metric",
+          "variableType": "independent",
+          "measure": "interval",
+          "datatype": "string",
+          "units": "year"
+        },
+        "y": {
+          "label": "Average Respondent Score",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 1
+        }
+      },
+      "series": [
+        {
+          "key": "Your Organization",
+          "theme": {
+            "baseQuantity": "Score",
+            "baseKind": "dimensioned"
+          },
+          "records":[
+            {
+            "x": "PEOPLE",
+            "y": "3.15"
+            },
+            {
+            "x": "CULTURE",
+            "y": "3.09"
+            },
+            {
+            "x": "WORK",
+            "y": "3.40"
+            },
+            {
+            "x": "IMPACT",
+            "y": "3.55"
+            }
+          ]
+        },
+        {
+          "key": "Benchmark",
+          "theme": {
+            "baseQuantity": "Score",
+            "baseKind": "dimensioned"
+          },
+          "records":[
+                {
+            "x": "PEOPLE",
+            "y": "3.02"
+            },
+            {
+            "x": "CULTURE",
+            "y": "2.86"
+            },
+            {
+            "x": "WORK",
+            "y": "3.12"
+            },
+            {
+            "x": "IMPACT",
+            "y": "3.35"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "sonification.isEnabled": true
+      }
+    }
+  ]
+}

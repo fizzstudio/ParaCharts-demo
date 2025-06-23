@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benchmarking Performance</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <script src="./_silverbullet.js">  </script>
+  <link rel="stylesheet" href="./_silverbullet.css" type="text/css" media="screen, projection, print">
+  <link rel="stylesheet" href="./_slide_template.css" type="text/css" media="screen, projection, print">
+  <script>
+    let process = {
+      env: {
+        NODE_ENV: "production"
+      }
+    };
+  </script>
+  <script src="../script/paracharts.js" type="module"></script>
+
+  <style>
+    section#chart_area {
+      width: 80%;
+      margin: auto;
+      height: 12em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <article id="container">
+    <main>
+      <h1 class="centered">Benchmarking Performance</h1>
+
+      <section id="chart_area">
+        <div style="display: flex;">
+          <para-chart filename="/data/manifests/page-12.json"></para-chart>
+        </div>
+      </section>
+
+      <section id="links">
+        <a id="next" href="intro3.html" aria-label="next slide"> </a>
+        <a id="previous" href="benchmarking-performance.html" aria-label="previous slide"> </a>
+      </section>
+    </main>
+    <footer>
+      <div id="footer_content">
+        <p class="footnote">Simulated data</p>
+      </div>
+      <img id="fizz_studio_logo" src="./assets/fizz-logo-white.svg" alt="">
+    </footer>
+  </article>
+</body>
+
+</html>

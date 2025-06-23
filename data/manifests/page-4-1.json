@@ -1,0 +1,86 @@
+{
+  "datasets": [
+    {
+      "type": "column",
+      "title": "Organization categories",
+      "facets": {
+        "x": {
+          "label": "Category",
+          "description": "categories of governance responsibility",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string",
+          "displayType": {
+            "type": "axis",
+            "orientation": "vertical"
+          }
+        },
+        "y": {
+          "label": "Performance",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "units": "point",
+          "displayType": {
+            "type": "axis",
+            "orientation": "horizontal"
+          }
+        }
+      },
+      "series": [
+        {
+          "key": "Category averages",
+          "theme": {
+            "baseQuantity": "performance",
+            "baseKind": "dimensioned",
+            "entity": "the Sample Organization",
+            "aggregate": "average self-reported"
+          },
+          "records": [
+            {
+              "x": "PEOPLE",
+              "y": "3.15"
+            },
+            {
+              "x": "CULTURE",
+              "y": "3.09"
+            },
+            {
+              "x": "WORK",
+              "y": "3.40"
+            },
+            {
+              "x": "IMPACT",
+              "y": "3.55"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "chart.title.isDrawTitle": false,
+        "controlPanel.isControlPanelDefaultOpen": false,
+        "color.colorPalette": "foundation",
+        "color.colorMap": "blue,yellow,red,green",
+        "chart.orientation": "east",
+        "chart.size.width": 180,
+        "axis.vert.labelOrder": "northToSouth",
+        "axis.x.title.isDrawTitle": false,
+        "axis.y.title.isDrawTitle": false,
+        "axis.y.tick.step": 2,
+        "axis.x.tick.tickLabel.isDrawEnabled": false,
+        "axis.y.line.isDrawEnabled": false,
+        "axis.x.tick.isDrawEnabled": false,
+        "axis.y.tick.isDrawEnabled": false,
+        "grid.isDrawHorizLines": false,
+        "type.bar.colorByDatapoint": true,
+        "type.bar.barWidth": 20,
+        "type.bar.isDrawRecordLabels": true,
+        "legend.isDrawLegend": false,
+        "sonification.isSoniEnabled": true
+      }
+    }
+  ]
+}

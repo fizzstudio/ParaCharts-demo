@@ -1,0 +1,121 @@
+{
+  "datasets": [
+    {
+      "type": "column",
+      "title": "Categories: your Organization vs. all Organizations",
+      "chartTheme": {
+        "baseQuantity": "performance",
+        "baseKind": "dimensioned",
+        "entity": "the Sample Organization and all assessed Organizations",
+        "aggregate": "average self-reported"
+      },
+      "facets": {
+        "x": {
+          "label": "Category",
+          "description": "categories of governance responsibility",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string",
+          "displayType": {
+            "type": "axis",
+            "orientation": "horizontal"
+          }
+        },
+        "y": {
+          "label": "Performance",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "displayType": {
+            "type": "axis",
+            "orientation": "vertical"
+          }
+        }
+      },
+      "series": [
+        {
+          "key": "Your Organization",
+          "theme": {
+            "baseQuantity": "performance",
+            "baseKind": "dimensioned",
+            "entity": "the Sample Organization",
+            "aggregate": "average self-reported"
+          },
+          "records": [
+            {
+              "x": "The People",
+              "y": "3.15"
+            },
+            {
+              "x": "The Culture",
+              "y": "3.09"
+            },
+            {
+              "x": "The Work",
+              "y": "3.40"
+            },
+            {
+              "x": "The Impact",
+              "y": "3.55"
+            }
+          ]
+        },
+        {
+          "key": "All Organizations",
+          "theme": {
+            "baseQuantity": "performance",
+            "baseKind": "dimensioned",
+            "entity": "all assessed Organizations",
+            "aggregate": "average self-reported"
+          },
+          "records": [
+            {
+              "x": "The People",
+              "y": "3.02"
+            },
+            {
+              "x": "The Culture",
+              "y": "2.86"
+            },
+            {
+              "x": "The Work",
+              "y": "3.12"
+            },
+            {
+              "x": "The Impact",
+              "y": "3.35"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "chart.title.isDrawTitle": false,
+        "controlPanel.isControlPanelDefaultOpen": false,
+        "color.colorPalette": "foundation",
+        "color.colorMap": "yellow,dark gray",
+        "chart.orientation": "north",
+        "chart.size.width": 960,
+        "axis.x.tick.tickLabel.angle": 0,
+        "axis.x.title.isDrawTitle": false,
+        "axis.x.tick.isDrawEnabled": false,
+        "axis.y.title.isDrawTitle": false,
+        "axis.y.tick.step": 1,
+        "axis.y.line.isDrawEnabled": false,
+        "axis.y.tick.isDrawEnabled": false,
+        "grid.isDrawVertLines": false,
+        "type.bar.colorByDatapoint": false,
+        "type.bar.barWidth": 20,
+        "type.bar.clusterGap": 20,
+        "type.bar.stackContent": "count",
+        "type.bar.stackCount": 1,
+        "legend.isDrawLegend": true,
+        "legend.position": "north",
+        "legend.itemOrder": "chart",
+        "sonification.isSoniEnabled": true
+      }
+    }
+  ]
+}

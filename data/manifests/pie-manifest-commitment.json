@@ -1,0 +1,54 @@
+{
+  "datasets": [
+    {
+      "type": "pie",
+      "title": "How satisfied are you with the overall effectiveness of the Organization?",
+      "facets": {
+        "x": {
+          "label": "Response type",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string"
+        },
+        "y": {
+          "label": "Proportion of respondents",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 0.01
+        }
+      },
+      "series": [
+        {
+          "key": "Proportion of respondents",
+          "theme": {
+            "baseQuantity": "response",
+            "baseKind": "proportion",
+            "entity": "Your Organization",
+            "aggregate": "total"
+          },
+          "records": [
+            {
+              "x": "Neutral",
+              "y": "6"
+            },
+            {
+              "x": "Satisfied",
+              "y": "59"
+            },
+            {
+              "x": "Very Satisfied",
+              "y": "34"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "sonification.isEnabled": true
+      }
+    }
+  ]
+}

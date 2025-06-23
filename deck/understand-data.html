@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding the Data</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <script src="./_silverbullet.js">  </script>
+  <link rel="stylesheet" href="./_silverbullet.css" type="text/css" media="screen, projection, print">
+  <link rel="stylesheet" href="./_slide_template.css" type="text/css" media="screen, projection, print">
+  <script>
+    let process = {
+      env: {
+        NODE_ENV: "production"
+      }
+    };
+  </script>
+  <script src="../script/paracharts.js" type="module"></script>
+  
+  <style>
+    footer {
+      margin-top: 0;
+      justify-content: flex-end;
+      padding-top: 0.5em;
+    }
+
+    div#footer_content {
+      text-align: center;
+      padding-right: 6em;
+    }
+  </style>
+</head>
+
+<body>
+  <article id="container">
+    <main>
+      <h1>Understanding the Data</h1>
+      <p>The scores for individual questions are averaged within each area of responsibility (as shown at right), and the scores for each responsibility are then averaged within each of the four overarching categories (as shown at left).</p>
+
+      <article id="dashOrganization">
+        <para-chart filename="/data/manifests/page-4-1.json"></para-chart>
+        <para-chart filename="/data/manifests/page-4-2.json"></para-chart>
+      </article>
+
+      <section id="links">
+        <a id="next" href="performance-high-low.html" aria-label="next slide"> </a>
+        <a id="previous" href="intro.html" aria-label="previous slide"> </a>
+      </section>
+    </main>
+    <footer>
+      <div id="footer_content">
+        <p>Scores are based on the following answer scale:
+          <br>
+          0=Poor; 1=Fair; 2=OK; 3=Good; 4=Excellent</p>
+      </div>
+      <img id="fizz_studio_logo" src="./assets/fizz-logo-white.svg" alt="">
+    </footer>
+  </article>
+</body>
+
+</html>

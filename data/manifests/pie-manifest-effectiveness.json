@@ -1,0 +1,54 @@
+{
+  "datasets": [
+    {
+      "type": "pie",
+      "title": "Are you satisfied with the level of commitment and involvement demonstrated by most Organization members?",
+      "facets": {
+        "x": {
+          "label": "Response type",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string"
+        },
+        "y": {
+          "label": "Proportion of respondents",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 0.01
+        }
+      },
+      "series": [
+        {
+          "key": "Proportion of respondents",
+          "theme": {
+            "baseQuantity": "response",
+            "baseKind": "proportion",
+            "entity": "Your Organization",
+            "aggregate": "total"
+          },
+          "records": [
+            {
+              "x": "Neutral",
+              "y": "9"
+            },
+            {
+              "x": "Satisfied",
+              "y": "41"
+            },
+            {
+              "x": "Very Satisfied",
+              "y": "50"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "sonification.isEnabled": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Want to use ParaCharts?</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <script src="./_silverbullet.js">  </script>
+  <link rel="stylesheet" href="./_silverbullet.css" type="text/css" media="screen, projection, print">
+  <link rel="stylesheet" href="./_slide_template.css" type="text/css" media="screen, projection, print">
+  
+  <style>
+    /* 
+    main {
+      background-image: url("./assets/faces.jpg") white;
+    } 
+    */
+
+    img#faces {
+      position: absolute;
+      width: 8em;
+      top: 2.5em;
+      right: 2.5em;
+    }
+
+    footer {
+      padding-top: 0.5em;
+    }
+
+    #footer_content {
+      max-width: 22em;
+      margin-left: 3.5rem;
+    }
+
+    ol {
+      list-style: none; 
+      counter-reset: li;
+    }
+
+    ol li {
+      counter-increment: li;
+    }
+
+    ol li::before {
+      content: "." counter(li); 
+      color: var(--work);
+      display: inline-block; 
+      width: 1em; 
+      margin-left: -1.5em;
+      margin-right: 1.5em; 
+      text-align: right; 
+      direction: rtl;
+    }
+
+
+    ol ul {
+      list-style: none;
+      margin-top: 0.7em;
+    }
+
+    ol ul li::before {
+      content: '•'; 
+      color: var(--work);
+      display: inline-block; 
+      width: 1em;
+      margin-left: -2em;
+      margin-right: 1.5em;
+    }
+
+    main {
+      max-width: 33em;
+    }
+
+    main p,
+    main ul {
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <article id="container">
+    <main>
+      <h1>Want to use ParaCharts?</h1>
+
+      <p>We are currently accepting design partners in our Design Partners Program. If you're interested in using ParaCharts in your organization, please let us know:</p>
+  
+      <ul>
+        <li>Visit the ParaCharts page at <a href="https://fizz.studio/paracharts">fizz.studio/paracharts</a>.</li>
+      </ul>
+
+      <p>Additional Questions? Please contact <br><a href="mailto:paracharts@fizz.studio">paracharts@fizz.studio</a> <br>or <br><a href="tel:1-919-824-5482">+1-919-824-5482</a>.</p>
+
+      <section id="links">
+        <a id="next" href="intro.html" aria-label="next slide"> </a>
+        <a id="previous" href="conversation.html" aria-label="previous slide"> </a>
+      </section>
+    </main>
+    <footer>
+      <div id="footer_content">
+        <p class="caveat">Please note: These slides are intended for demo purposes only, and and should be credited to Fizz Studio. Further distribution of these slides is prohibited without written permission from Fizz Studio.</p>
+      </div>
+      <img id="fizz_studio_logo" src="./assets/fizz-logo-white.svg" alt="">
+    </footer>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+{
+  "datasets": [
+    {
+      "type": "pie",
+      "title": "Reward and satisfaction of your Organization",
+      "facets": {
+        "x": {
+          "label": "Rewarding",
+          "variableType": "independent",
+          "measure": "nominal",
+          "datatype": "string",
+          "displayType": {
+            "type": "axis",
+            "orientation": "horizontal"
+          }
+        },
+        "y": {
+          "label": "Percent",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "displayType": {
+            "type": "axis",
+            "orientation": "vertical"
+          }
+        }
+      },
+      "series": [
+        {
+          "key": "Your Organization",
+          "theme": {
+            "baseQuantity": "degree of rewardingness",
+            "baseKind": "dimensioned",
+            "entity": "serving on the Sample Organization",
+            "aggregate": "self-reported"
+          },
+          "records": [
+            {
+              "x": "Very Unrewarding",
+              "y": "3"
+            },
+            {
+              "x": "Neutral",
+              "y": "3"
+            },
+            {
+              "x": "Somewhat Rewarding",
+              "y": "10"
+            },
+            {
+              "x": "Very Rewarding",
+              "y": "80"
+            },
+            {
+              "x": "No Opinion",
+              "y": "3"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      },
+      "settings": {
+        "controlPanel.isControlPanelDefaultOpen": false,
+        "color.colorPalette": "foundation",
+        "color.colorMap": "very_unrewarding,neutral,somewhat_rewarding,very_rewarding,no_opinion",
+        "chart.orientation": "north",
+        "chart.size.width": 320,
+        "chart.title.align": "start",
+        "chart.title.margin": 10,
+        "axis.x.tick.tickLabel.angle": 0,
+        "axis.y.tick.step": 1,
+        "legend.isDrawLegend": false,
+        "sonification.isSoniEnabled": true
+      }
+    }
+  ]
+}
