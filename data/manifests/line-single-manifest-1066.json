@@ -1,0 +1,132 @@
+{
+  "datasets": [
+    {
+      "type": "line",
+      "title": "Median age of the population in Vietnam 2015",
+      "facets": {
+        "x": {
+          "label": "Year",
+          "variableType": "independent",
+          "measure": "interval",
+          "datatype": "date",
+          "units": "year",
+          "displayType": {
+            "type": "axis",
+            "orientation": "horizontal"
+          }
+        },
+        "y": {
+          "label": "Age in years",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "units": "year",
+          "displayType": {
+            "type": "axis",
+            "orientation": "vertical"
+          }
+        }
+      },
+      "series": [
+        {
+          "key": "Median age in years",
+          "theme": {
+            "baseQuantity": "age",
+            "baseKind": "dimensioned",
+            "locale": "Vietnam",
+            "aggregate": "median"
+          },
+          "records": [
+            {
+              "x": "1950",
+              "y": "24.5"
+            },
+            {
+              "x": "1955",
+              "y": "23.6"
+            },
+            {
+              "x": "1960",
+              "y": "21.9"
+            },
+            {
+              "x": "1965",
+              "y": "19.2"
+            },
+            {
+              "x": "1970",
+              "y": "18.2"
+            },
+            {
+              "x": "1975",
+              "y": "18.3"
+            },
+            {
+              "x": "1980",
+              "y": "19.1"
+            },
+            {
+              "x": "1985",
+              "y": "20.0"
+            },
+            {
+              "x": "1990",
+              "y": "21.1"
+            },
+            {
+              "x": "1995",
+              "y": "22.3"
+            },
+            {
+              "x": "2000",
+              "y": "24.2"
+            },
+            {
+              "x": "2005",
+              "y": "26.4"
+            },
+            {
+              "x": "2010",
+              "y": "28.5"
+            },
+            {
+              "x": "2015",
+              "y": "30.5"
+            },
+            {
+              "x": "2020*",
+              "y": "32.5"
+            },
+            {
+              "x": "2025*",
+              "y": "34.6"
+            },
+            {
+              "x": "2030*",
+              "y": "36.7"
+            },
+            {
+              "x": "2035*",
+              "y": "38.5"
+            },
+            {
+              "x": "2040*",
+              "y": "39.7"
+            },
+            {
+              "x": "2045*",
+              "y": "40.4"
+            },
+            {
+              "x": "2050*",
+              "y": "41.2"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      }
+    }
+  ]
+}

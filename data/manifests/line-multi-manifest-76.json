@@ -1,0 +1,150 @@
+{
+  "datasets": [
+    {
+      "type": "line",
+      "title": "Inflation rate in EU and Euro area 2024",
+      "chartTheme": {
+        "baseQuantity": "inflation",
+        "baseKind": "rate",
+        "locale": "region"
+      },
+      "facets": {
+        "x": {
+          "label": "Year",
+          "variableType": "independent",
+          "measure": "interval",
+          "datatype": "date",
+          "units": "year",
+          "displayType": {
+            "type": "axis",
+            "orientation": "horizontal"
+          }
+        },
+        "y": {
+          "label": "Inflation rate",
+          "variableType": "dependent",
+          "measure": "ratio",
+          "datatype": "number",
+          "multiplier": 0.01,
+          "displayType": {
+            "type": "axis",
+            "orientation": "vertical"
+          }
+        }
+      },
+      "series": [
+        {
+          "key": "EU",
+          "theme": {
+            "baseQuantity": "inflation",
+            "baseKind": "rate",
+            "locale": "the EU"
+          },
+          "records": [
+            {
+              "x": "2014",
+              "y": "0.54"
+            },
+            {
+              "x": "2015",
+              "y": "0.1"
+            },
+            {
+              "x": "2016",
+              "y": "0.23"
+            },
+            {
+              "x": "2017",
+              "y": "1.74"
+            },
+            {
+              "x": "2018",
+              "y": "1.93"
+            },
+            {
+              "x": "2019*",
+              "y": "1.55"
+            },
+            {
+              "x": "2020*",
+              "y": "1.69"
+            },
+            {
+              "x": "2021*",
+              "y": "1.78"
+            },
+            {
+              "x": "2022*",
+              "y": "1.88"
+            },
+            {
+              "x": "2023*",
+              "y": "1.94"
+            },
+            {
+              "x": "2024*",
+              "y": "1.98"
+            }
+          ]
+        },
+        {
+          "key": "Euro area",
+          "theme": {
+            "baseQuantity": "inflation",
+            "baseKind": "rate",
+            "locale": "the Euro area"
+          },
+          "records": [
+            {
+              "x": "2014",
+              "y": "0.43"
+            },
+            {
+              "x": "2015",
+              "y": "0.19"
+            },
+            {
+              "x": "2016",
+              "y": "0.24"
+            },
+            {
+              "x": "2017",
+              "y": "1.54"
+            },
+            {
+              "x": "2018",
+              "y": "1.76"
+            },
+            {
+              "x": "2019*",
+              "y": "1.23"
+            },
+            {
+              "x": "2020*",
+              "y": "1.38"
+            },
+            {
+              "x": "2021*",
+              "y": "1.5"
+            },
+            {
+              "x": "2022*",
+              "y": "1.67"
+            },
+            {
+              "x": "2023*",
+              "y": "1.77"
+            },
+            {
+              "x": "2024*",
+              "y": "1.84"
+            }
+          ]
+        }
+      ],
+      "data": {
+        "source": "inline"
+      }
+    }
+  ]
+}
