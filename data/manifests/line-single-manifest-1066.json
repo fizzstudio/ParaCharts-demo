@@ -126,6 +126,9 @@
       ],
       "data": {
         "source": "inline"
+      },
+      "settings": {
+        "controlPanel.isControlPanelDefaultOpen": true
       }
     }
   ]
