@@ -1,0 +1,124 @@
+{
+  "jim": {
+    "datasets": [
+      {
+        "representation": {
+          "type": "chart",
+          "subtype": "waterfall"
+        },
+        "title": "Acme Corp Share Price",
+        "facets": {
+          "x": {
+            "label": "Year",
+            "variableType": "independent",
+            "measure": "nominal",
+            "datatype": "date",
+            "units": "year",
+            "displayType": {
+              "type": "axis",
+              "orientation": "horizontal"
+            }
+          },
+          "y": {
+            "label": "Share Price",
+            "variableType": "dependent",
+            "measure": "ratio",
+            "datatype": "number",
+            "multiplier": 1,
+            "units": "USD",
+            "displayType": {
+              "type": "axis",
+              "orientation": "vertical"
+            }
+          }
+        },
+        "series": [
+          {
+            "key": "Acme Corp Share Price",
+            "records": [
+              {
+                "x": "D20130101",
+                "y": "10"
+              },
+              {
+                "x": "2013",
+                "y": "4"
+              },
+              {
+                "x": "2014",
+                "y": "3"
+              },
+              {
+                "x": "2015",
+                "y": "-9"
+              },
+              {
+                "x": "2016",
+                "y": "-5"
+              },
+              {
+                "x": "2017",
+                "y": "12"
+              },
+              {
+                "x": "2018",
+                "y": "-7"
+              },
+              {
+                "x": "2019",
+                "y": "4"
+              },
+              {
+                "x": "D20191231",
+                "y": "12"
+              }
+            ],
+            "topic": {
+              "baseQuantity": "share price",
+              "baseKind": "dimensioned",
+              "entity": "Acme Corp"
+            }
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "id": "anno:20130101-label",
+        "motivation": "labelling",
+        "target": {
+          "json": "$.datasets[0].series[0].records[0].x"
+        },
+        "body": {
+          "en": "Start"
+        }
+      },
+      {
+        "id": "anno:20130101-total",
+        "motivation": "classifying",
+        "target": {
+          "json": "$.datasets[0].series[0].records[0]"
+        },
+        "tags": [ "total" ]
+      },
+      {
+        "id": "anno:20191231-label",
+        "motivation": "labelling",
+        "target": {
+          "json": "$.datasets[0].series[0].records[8].x"
+        },
+        "body": {
+          "en": "End"
+        }
+      },
+      {
+        "id": "anno:20191231-total",
+        "motivation": "classifying",
+        "target": {
+          "json": "$.datasets[0].series[0].records[0]"
+        },
+        "tags": [ "total" ]
+      }
+    ]
+  }
+}
